@@ -18,7 +18,7 @@ A Python GUI application for simplifying Arch Linux development environment setu
 ## Installation
 
 ```bash
-git clone https://github.com/yourusername/arch_tools.git
+git clone https://github.com/nmajestic/arch_tools.git
 cd arch_tools
 uv sync
 ```
