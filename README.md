@@ -52,7 +52,7 @@ Run tests:
 uv run pytest
 ```
 
-Lint and format:
+Lint, format, and static analysis:
 ```bash
 uv run ruff check .
 uv run ruff format .
