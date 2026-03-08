@@ -17,12 +17,14 @@ def get_aur_helper():
     paru_result = subprocess.run(
         ["pacman", "-Qq", "paru"], capture_output=True, check=False
     )
+
+    if paru_result.returncode == 0:
+        return "paru"
+
     yay_result = subprocess.run(
         ["pacman", "-Qq", "yay"], capture_output=True, check=False
     )
 
-    if paru_result.returncode == 0:
-        return "paru"
     if yay_result.returncode == 0:
         return "yay"
     return None
