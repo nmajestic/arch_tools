@@ -1,0 +1,11 @@
+[project]
+name = "arch-tools"
+version = "0.0.1"
+description = "arch_tools is a project to simplify getting up and running in arch linux."
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "pylint>=4.0.5",
+    "pytest>=9.0.2",
+    "ruff>=0.15.5",
+]
